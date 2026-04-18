@@ -75,6 +75,15 @@ This feature improves usability by allowing users to review the questions they h
 
 Acceptance Criteria
 
-- When the user runs the "list" command, all questions are displayed.
-- If there are no questions, the system should inform the user.
-- If the system is not initialized, an appropriate error message should be shown.
+When the user runs the "list" command, the system shall display all questions in the format:
+  id | question
+
+Each question must be displayed on a new line.
+
+The output must not include answers.
+
+If there are no questions, the system shall print:
+  "No questions available."
+
+If the system is not initialized, the system shall print:
+  "Not initialized. Run: python miniquiz.py init"
